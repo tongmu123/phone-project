@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/shop9.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css" />
+		<script src="js/PCASClass.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".jia").click(function() {
+					var num = $(this).parent(".num").children(".num_text");
+					if (num.val() < 10) {
+						num.val(parseInt(num.val()) + 1);
+					}
+				})
+
+				$(".jian").click(function() {
+					var num = $(this).parent(".num").children(".num_text");
+					if (num.val() > 1) {
+						num.val(parseInt(num.val()) - 1);
+					}
+				})
+				/* 对勾 */
+				var show = true;
+				$(".goods .lef").click(function() {
+					if (show) {
+						$(this).children("img").show();
+						show = false;
+					} else {
+						$(this).children("img").hide();
+						show = true;
+					}
+				});
+
+				/* 全选 */
+				var state = true;
+				$(".order .pic").click(function() {
+					if (state) {
+						$(this).children("img").show();
+						$(this).parents(".body").find(".goods .lef img").show();
+						state = false;
+
+					} else {
+						$(this).children("img").hide();
+						$(this).parents(".body").find(".goods .lef img").hide();
+						state = true;
+					}
+				})
+			});
+		</script>
+	</head>
+
+
+	<body>
+		<!-- 购物车 -->
+		<div class="body">
+			<!-- header -->
+			<div class="header">
+				<div class="box1">
+					<div class="icon">
+						<img src="img/2_03.jpg">
+					</div>
+					<div class="kong">|</div>
+					<div class="text">购物车</div>
+				</div>
+				<div class="box2">
+					<div class="more">
+						<img src="img/2_05.jpg">
+					</div>
+				</div>
+			</div>
+
+			<!-- 商品 -->
+			<div class="goods">
+				<div class="lef">
+					<img src="img/check.png">
+				</div>
+				<div class="centre">
+					<img src="img/8产品详情_02.jpg">
+				</div>
+				<div class="rgt">
+					<div class="up">
+						<span>水星家纺提花套件欧式简约提花四件套侧耳倾听1.5/1.8米床上用品</span>
+					</div>
+					<div class="centre">
+						<span>1.8M床：使用2.2M×2.4M被芯</span>
+					</div>
+					<div class="down">
+						<div class="price">
+							<p>￥</p><span>61.9</span>
+						</div>
+
+						<div class="num">
+							<div class="jian">-</div>
+							<input type="text" name="" class="num_text" value="1" />
+							<div class="jia">+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 商品 -->
+			<div class="goods goods2">
+				<div class="lef">
+					<img src="img/check.png">
+				</div>
+				<div class="centre">
+					<img src="img/8产品详情_02.jpg">
+				</div>
+				<div class="rgt">
+					<div class="up">
+						<span>水星家纺提花套件欧式简约提花四件套侧耳倾听1.5/1.8米床上用品</span>
+					</div>
+					<div class="centre">
+						<span>1.8M床：使用2.2M×2.4M被芯</span>
+					</div>
+					<div class="down">
+						<div class="price">
+							<p>￥</p><span>61.9</span>
+						</div>
+
+						<div class="num">
+							<div class="jian">-</div>
+							<input type="text" name="" class="num_text" value="1" />
+							<div class="jia">+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="myshop">
+				<!-- 大家都在买 -->
+				<div class="shopping">
+					大家都在买
+				</div>
+
+				<!--  -->
+				<div class="shop-list">
+					<div class="floor2">
+						<div class="lef">
+							<img src="img/con9.png">
+						</div>
+						<div class="rgt">
+							<div class="top">
+								<span>高端GNF不锈钢脚用垃圾桶家用40L大容量30L厨房25L客厅8L有盖…</span>
+							</div>
+							<div class="centre">
+								<div class="pic">
+									<img src="img/icon1111.png">
+								</div>
+								<span>积分折扣：27.9</span>
+								<p>到手价</p>
+								<b>￥61.9</b>
+							</div>
+							<div class="btm">
+								<div class="pic">
+									<img src="img/icon2222.png">
+								</div>
+								<b>赚￥</b>
+								<p>13.19</p>
+								<span>佣金比例：15.00%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--  -->
+				<div class="shop-list">
+					<div class="floor2">
+						<div class="lef">
+							<img src="img/con9.png">
+						</div>
+						<div class="rgt">
+							<div class="top">
+								<span>高端GNF不锈钢脚用垃圾桶家用40L大容量30L厨房25L客厅8L有盖…</span>
+							</div>
+							<div class="centre">
+								<div class="pic">
+									<img src="img/icon1111.png">
+								</div>
+								<span>积分折扣：27.9</span>
+								<p>到手价</p>
+								<b>￥61.9</b>
+							</div>
+							<div class="btm">
+								<div class="pic">
+									<img src="img/icon2222.png">
+								</div>
+								<b>赚￥</b>
+								<p>13.19</p>
+								<span>佣金比例：15.00%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--  -->
+				<div class="shop-list">
+					<div class="floor2">
+						<div class="lef">
+							<img src="img/con9.png">
+						</div>
+						<div class="rgt">
+							<div class="top">
+								<span>高端GNF不锈钢脚用垃圾桶家用40L大容量30L厨房25L客厅8L有盖…</span>
+							</div>
+							<div class="centre">
+								<div class="pic">
+									<img src="img/icon1111.png">
+								</div>
+								<span>积分折扣：27.9</span>
+								<p>到手价</p>
+								<b>￥61.9</b>
+							</div>
+							<div class="btm">
+								<div class="pic">
+									<img src="img/icon2222.png">
+								</div>
+								<b>赚￥</b>
+								<p>13.19</p>
+								<span>佣金比例：15.00%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 下单 -->
+			<div class="order">
+				<div class="lft">
+					<div class="kong">
+						<div class="pic">
+							<img src="img/check.png">
+						</div>
+						<span>全选</span>
+					</div>
+
+					<div class="price">
+						<p>合计：</p>
+						<b>￥</b>
+						<span>0</span>
+					</div>
+				</div>
+				<div class="rgt">
+					下单
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

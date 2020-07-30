@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<title>添加收货地址</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/shop6.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css" />
+		<script src="js/PCASClass.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			/* header */
+			html,
+			body {
+				background-color: #efefef;
+			}
+
+			/* header */
+			.header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 6.4vw 6.53vw;
+				background-color: #fff;
+			}
+
+			.header .box1 {
+				display: flex;
+				justify-content: flex-start;
+			}
+
+			.header .box1 .icon {
+				width: 4.53vw;
+				height: 4.53vw;
+				margin-top: 1vw;
+				cursor: pointer;
+			}
+
+			.header .box1 .icon img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.header .box1 .kong {
+				font-size: 4.53vw;
+				color: #101010;
+				margin-left: 4.3vw;
+				margin-right: 2.93vw;
+			}
+
+			.header .box1 .text {
+				font-size: 4.53vw;
+				color: #101010;
+			}
+
+			.header .more {
+				margin-top: 1vw;
+				width: 2.0vw;
+				height: 4.4vw;
+			}
+
+			.header .more img {
+				width: 100%;
+				height: 100%;
+			}
+
+			/* phone */
+			.phone {
+
+				height: 12vw;
+				background-color: #fff;
+				display: flex;
+				flex-direction: row;
+				border-top: 0.2vw solid #eee;
+				padding: 0 4.93vw;
+			}
+
+			.phone .name {
+				width: 50%;
+				height: 12vw;
+				border-right: 0.2vw solid #eee;
+				font-size: 3.73vw;
+				color: #292929;
+				margin-left: 2.4vw;
+				line-height: 12vw;
+
+			}
+
+			.phone .iphone {
+				width: 50%;
+				height: 12vw;
+				font-size: 3.73vw;
+				color: #292929;
+				margin-left: 2.4vw;
+				line-height: 12vw;
+			}
+
+
+			/* 地址 */
+			.site {
+				height: 11.2vw;
+				border-top: 0.2vw solid #eee;
+				border-bottom: 0.2vw solid #eee;
+				background-color: #fff;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				padding: 0 6.53vw;
+			}
+
+			select {
+				font-size: 3.73vw;
+				color: #292929;
+				text-decoration: none;
+				border: none;
+				cursor: pointer;
+
+			}
+
+			select:first-child {
+				width: 25vw;
+			}
+
+			.site-street {
+				height: 11.2vw;
+				background-color: #fff;
+				font-size: 3.73vw;
+				color: #292929;
+				line-height: 11.2vw;
+				padding: 0 4.93vw;
+
+			}
+
+			/* 去掉获得焦点后的边框 */
+			[contenteditable]:focus {
+				outline: none;
+			}
+
+			/* 保存 */
+			.keep {
+				width: 100vw;
+				height: 12vw;
+				background-color: #FF2732;
+				text-align: center;
+				line-height: 12vw;
+				font-size: 3.73vw;
+				color: #fff;
+				cursor: pointer;
+				position: fixed;
+				bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 添加收货地址 -->
+
+		<!-- header -->
+		<!--  -->
+		<div class="header">
+			<div class="box1">
+				<div class="icon">
+					<img src="./img/close2.png">
+				</div>
+				<div class="kong">|</div>
+				<div class="text">添加收货地址</div>
+			</div>
+			<div class="box2">
+				<div class="more">
+					<img src="img/2_05.jpg">
+				</div>
+			</div>
+		</div>
+
+		<!-- phone -->
+		<div class="phone">
+			<div class="name" contenteditable="true">名字</div>
+			<div class="iphone" contenteditable="true">电话</div>
+		</div>
+
+		<!-- 地址 -->
+		<div class="site">
+			<select name="province3"></select>
+			<select name="city3"></select>
+			<select name="area3"></select>
+		</div>
+
+		<div class="site-street" contenteditable="true">
+			请填写详细街道地址
+		</div>
+
+		<!-- 保存 -->
+		<div class="keep">保存</div>
+
+
+
+		<script type="text/javascript">
+			/* 省市区三级联动 */
+			new PCAS("province3", "city3", "area3");
+			$(".phone .name").click(function(){
+				console.log($(this).text());
+				$(this).text("");
+			})
+			$(".phone .iphone").click(function(){
+				console.log($(this).text());
+				$(this).text("");
+			})
+			$(".site-street").click(function(){
+				console.log($(this).text());
+				$(this).text("");
+			})
+		</script>
+	</body>
+</html>

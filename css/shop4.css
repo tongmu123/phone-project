@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6.4vw 2.2vw 6.4vw 6vw;
+	background-color: #fff;
+}
+
+.header .box1 {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.header .box1 .icon {
+	width: 2.4vw;
+	height: 4.53vw;
+	margin-top: 1vw;
+}
+
+.header .box1 .icon img {
+	width: 100%;
+	height: 100%;
+}
+
+.header .box1 .kong {
+	font-size: 4.53vw;
+	color: #101010;
+	margin-left: 4.3vw;
+	margin-right: 2.93vw;
+}
+
+.header .box1 .text {
+	font-size: 4.53vw;
+	color: #101010;
+}
+
+.header .more {
+	margin-top: 1vw;
+	width: 2.0vw;
+	height: 4.4vw;
+}
+
+.header .more img {
+	width: 100%;
+	height: 100%;
+}
+
+/* 搜索 */
+.ipt {
+	margin-left: 2vw;
+	font-size: 3.47vw;
+}
+
+.ipt img{
+	width: 4vw;
+	height: 3.73vw;
+	position: absolute;
+	top: 21.5vw;
+	left: 38vw;
+}
+.search {
+	width: 92.53vw;
+	height: 8.8vw;
+	border-radius: 2vw;	
+	background-color: #f4f8f7;
+	text-align: center;
+	color: rgba(16, 16, 16, 0.7);
+	outline: 0;
+	border: 0px solid #ccc;
+}
+
+
+
+.search span {
+	font-size: 3.47vw;
+	margin-right: 20vw;
+	margin-left: 2vw;
+}
+
+/* shop */
+.shop {
+	display: flex;
+	justify-content: flex-start;
+	border-top: 0.2vw solid #eeeeee;
+	border-bottom: 0.3vw solid #eeeeee;
+	margin-top: 2.8vw;
+}
+
+.shop .left-list {
+	width: 31.13vw;
+	height: 301.17vw;
+	border-right: 0.2vw solid #eeeeee;
+	/* padding: 5.2vw 3.87vw; */
+
+}
+
+.shop .left-list ul {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.shop .left-list ul>li {
+	/* display: inline-block; */
+	font-size: 3.47vw;
+	margin-top: 6.27vw;
+	color: #101010;
+	cursor: pointer;
+}
+
+.shop .left-list ul>li:hover {
+	color: #FF2732;
+	border-left: 0.5vw solid #FF2732;
+}
+
+.shop .right-list {
+	/* padding: 3.73vw 4.27vw; */
+	padding: 3.73vw 0 25vw 3.80vw;
+}
+
+.shop .right-list .pic {
+	width: 71.2vw;
+	height: 26.67vw;
+	margin-bottom: 3.33vw;
+}
+
+.shop .right-list .pic img {
+	width: 100%;
+	height: 100%;
+}
+
+.shop .right-list .text {
+	width: 71.33vw;
+	border-bottom: 0.2vw solid #eeeeee;
+
+}
+
+.shop .right-list .text span {
+	font-size: 3.47vw;
+	color: #101010;
+	font-weight: 600;
+}
+
+.shop .right-list .pic-list {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+
+.shop .right-list .pic-list2 {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.shop .right-list .pic-single {
+	display: flex;
+	flex-direction: column;
+	margin-right: 6.53vw;
+}
+
+
+.shop .right-list .pic-single img {
+	width: 8.8vw;
+	height: 10vw;
+	margin: 4.4vw 0 3.47vw 2.53vw;
+}
+
+.shop .right-list .pic-single span {
+	font-size: 3.47vw;
+	color: #101010;
+	text-align: center;
+}
+
+.shop .right-list .text2 {
+	margin-top: 12.13vw;
+}
+
+.shop .right-list .text3 {
+	margin-top: 11.33vw;
+}
+
+.shop .right-list .pic2 {
+	margin-top: 11.73vw;
+}
+
+.shop .right-list .pic-list2 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* footer */
+.footer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100vw;
+	padding: 2.4vw 7.47vw 11.6vw 7.2vw;
+	position: fixed;
+	bottom: 0;
+	background-color: #fff;
+	border-top: 0.1vw solid #ccc;
+}
+
+.footer .item {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.footer img {
+	width: 5.33vw;
+	height: 5.33vw;
+	margin-bottom: 1.07vw;
+	margin-left: 1vw;
+}
+
+.footer span {
+	font-size: 3.47vw;
+	color: #5f5f5f;
+}
+
+.footer img:hover {
+	color: #FF2732;
+}
+
+.footer span:hover {
+	color: #FF2732;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的地址</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/shop5.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css" />
+		<script src="lib/swiper/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			html,
+			body {
+				background-color: #efefef;
+			}
+
+			/* header */
+			.header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 6.4vw 6.53vw;
+				background-color: #fff;
+			}
+
+			.header .box1 {
+				display: flex;
+				justify-content: flex-start;
+			}
+
+			.header .box1 .icon {
+				width: 4.53vw;
+				height: 4.53vw;
+				margin-top: 1vw;
+			}
+
+			.header .box1 .icon img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.header .box1 .kong {
+				font-size: 4.53vw;
+				color: #101010;
+				margin-left: 4.3vw;
+				margin-right: 2.93vw;
+			}
+
+			.header .box1 .text {
+				font-size: 4.53vw;
+				color: #101010;
+			}
+
+			.header .more {
+				margin-top: 1vw;
+				width: 2.0vw;
+				height: 4.4vw;
+			}
+
+			.header .more img {
+				width: 100%;
+				height: 100%;
+			}
+			.site {
+				background-color: #fff;
+			}
+
+			/* 收货地址 */
+			.site ul {
+				border-top: 0.2vw solid #d1d1cf;
+				border-bottom: 0.2vw solid #d1d1cf;
+				padding: 3.87vw 13.47vw 3.73vw 4.67vw;
+			}
+
+			.site li {
+				font-size: 3.73vw;
+				color: #292929;
+			}
+
+			.site .site-dizhi {
+				width: 81.87vw;
+				height: 10.13vw;
+			}
+
+			.edit {
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+				padding: 4.67vw 5.73vw 3.5vw 4.7vw;
+				background-color: #fff;
+			}
+
+			.edit .lft input {
+				width: 2.67vw;
+				height: 2.67vw;
+				margin-right: 1.6vw;
+			}
+
+			.edit .lft span {
+				font-size: 3.47vw;
+				color: #000000;
+			}
+
+			.edit .rgt {
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+			}
+
+			.edit .rgt .edit-edit {
+				width: 21.47vw;
+				height: 6.53vw;
+				border-radius: 1vw;
+				background-color: #FF2732;
+				text-align: center;
+				line-height: 6.53vw;
+				color: #fff;
+				font-size: 3.73vw;
+				cursor: pointer;
+				margin-right: 6.53vw;
+			}
+
+			.edit .rgt img {
+				width: 5.47vw;
+				height: 5.73vw;
+				cursor: pointer;
+			}
+
+			.site2 {
+				margin-top: 4.27vw;
+			}
+			.add{
+				width: 100vw;
+				height: 12vw;
+				background-color: #FF2732;
+				position: fixed;
+				bottom: 0;
+				text-align: center;
+				line-height: 12vw;
+				color: #fff;
+				cursor: pointer;
+				font-size: 3.73vw;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!--  -->
+		<div class="header">
+			<div class="box1">
+				<div class="icon">
+					<img src="./img/close2.png">
+				</div>
+				<div class="kong">|</div>
+				<div class="text">我的地址</div>
+			</div>
+			<div class="box2">
+				<div class="more">
+					<img src="img/2_05.jpg">
+				</div>
+			</div>
+		</div>
+
+		<!-- 收货地址 -->
+		<div class="site">
+			<ul>
+				<li>收货人：</li>
+				<li>联系方式：123456789</li>
+				<li class="site-dizhi">收货地址：山东省青岛市市北区镇江路街道延吉路46号中海大厦2703</li>
+			</ul>
+		</div>
+
+		<!-- 编辑 -->
+		<div class="edit">
+			<div class="lft">
+				<input type="radio" name="" id="" value="" />
+				<span>默认地址</span>
+			</div>
+			<div class="rgt">
+				<div class="edit-edit">编辑</div>
+				<div class="del">
+					<img src="img/delete.png">
+				</div>
+			</div>
+		</div>
+
+		<!-- 收货地址 -->
+		<div class="site site2">
+			<ul>
+				<li>收货人：</li>
+				<li>联系方式：123456789</li>
+				<li class="site-dizhi">收货地址：山东省青岛市市北区镇江路街道延吉路46号中海大厦2703</li>
+			</ul>
+		</div>
+
+		<!-- 编辑 -->
+		<div class="edit">
+			<div class="lft">
+				<input type="radio" name="" id="" value="" />
+				<span>默认地址</span>
+			</div>
+			<div class="rgt">
+				<div class="edit-edit">编辑</div>
+				<div class="del">
+					<img src="img/delete.png">
+				</div>
+			</div>
+		</div>
+		
+		<!-- 添加 -->
+		<div class="add">添加新地址</div>
+
+	</body>
+</html>
